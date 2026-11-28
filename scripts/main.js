@@ -27,7 +27,7 @@ if (contactForm) {
     e.preventDefault(); // Prevent page refresh
     
     // Change button state
-    submitBtn.value = "Sending...";
+    submitBtn.textContent = "Sending...";
     submitBtn.disabled = true;
 
     // Gather form data
@@ -55,7 +55,7 @@ if (contactForm) {
       statusMsg.style.color = "#dc3545";
       statusMsg.innerText = " Connection failed. Try again later.";
     } finally {
-      submitBtn.value = "Submit"; 
+      submitBtn.textContent = "[ Send message ]"; 
       submitBtn.disabled = false;
     }
   });

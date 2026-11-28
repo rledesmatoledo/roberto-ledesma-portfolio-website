@@ -48,10 +48,8 @@ a:focus-visible {
 
 main {
     background-color: var(--canvas);
-    max-width: 5000px;
     margin: 0 auto;
-    padding: 0 2rem;
-    flex: 1;
+    padding: 0;
 }
 
 /*  SITE HEADER & NAVIGATION */
@@ -997,4 +995,19 @@ textarea.contact-field {
     .cursor-block { width: 20px; height: 48px; }
     .contrib-symbol { width: 56px; height: 56px; font-size: 30px; white-space: nowrap; }
     .featured-strip .right { display: none; }
+
+    
+}
+.live-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: var(--purple);
+    vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .live-dot { animation: blink 1.15s steps(1, end) infinite; }
 }
