@@ -914,6 +914,9 @@ textarea.contact-field {
         grid-template-columns: 1fr;
         flex-direction: column;
     }
+    .contact-grid {
+        align-items: stretch;
+    }
 
     .home-cta {
         flex-direction: column;
@@ -930,7 +933,7 @@ textarea.contact-field {
 
 @media (max-width: 768px) {
     main {
-        padding: 0 1rem;
+         padding: 0 1rem;
     }
 
     .rd-header {
